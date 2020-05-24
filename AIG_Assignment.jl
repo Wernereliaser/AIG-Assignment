@@ -178,10 +178,6 @@ function regularization(x,y,theta,lamda)
     return (gradient,r_cost)
 end
 
-#____________________________
-# Step 3 Peformance matrics
-#____________________________
-
 #prediction function
 function predict(x,theta)
     m = size(x)[1]
@@ -208,6 +204,11 @@ test_result = mean(yTest .== probability(predict(normalized_test,0.5)))
 
 println("Train result: ",round(train_result,sigdigits = 4))
 println("Test results: ",round(test_result,sigdigits = 4))
+
+
+#____________________________
+# Step 3 Peformance matrics
+#____________________________
 
 #confusion matrix
 function confusionmat(predicted,actual,d)
