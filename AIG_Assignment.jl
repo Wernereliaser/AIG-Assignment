@@ -1,3 +1,7 @@
+#Group members: 
+#1. Andreas Elifas, student no: 218024142
+#2. Eliaser Werner, student no: 218062958
+
 using DataFrames,Statistics,CSV,Plots
 
 #loading the data into julia
